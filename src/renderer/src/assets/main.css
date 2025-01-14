@@ -1,0 +1,23 @@
+@import './base.css';
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @apply bg-gradient-to-br from-pastel-green-300 to-pastel-green-200 dark:from-deep-sea-800 dark:to-deep-sea-700 min-h-screen text-pastel-green-950 dark:text-cafe-700;
+  user-select: none;
+}
+
+h1{
+  @apply font-serif text-4xl font-extrabold tracking-wider dark:text-cafe-300;
+}
+
+header {
+  @apply text-pastel-green-900 dark:text-deep-sea-50;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  @apply min-h-screen p-4;
+}
