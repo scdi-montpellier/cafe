@@ -1,15 +1,15 @@
-# CAFÉ : Création Automatisée de Fichiers d'Exemplarisation
+# CAFÃ‰ : CrÃ©ation AutomatisÃ©e de Fichiers d'Exemplarisation
 
-CAFÉ est une application ElectronJS (utilise la bibliothèque JavaScript React).
-L’application « CAFÉ » permet d'automatiser le traitement des données provenant du Sudoc et de BACON, opérations essentielles à la préparation des fichiers d’exemplarisation pour le signalement de la documentation électronique. L'application a été développée dans le cadre du Programme de coopération initié par l’Abes.
+CAFÃ‰ est une application ElectronJS (utilise la bibliothÃ¨que JavaScript React).
+Lâ€™application Â« CAFÃ‰ Â» permet d'automatiser le traitement des donnÃ©es provenant du Sudoc et de BACON, opÃ©rations essentielles Ã  la prÃ©paration des fichiers dâ€™exemplarisation pour le signalement de la documentation Ã©lectronique. L'application a Ã©tÃ© dÃ©veloppÃ©e dans le cadre du Programme de coopÃ©ration initiÃ© par lâ€™Abes.
 L'application est actuellement en test.
 
-### Crédits
-L’application CAFÉ a été conçue par le SCDI de Montpellier
-L’outil a été développé par UCCELLO LABS contact@uccellolabs.com  
+### CrÃ©dits
+Lâ€™application CAFÃ‰ a Ã©tÃ© conÃ§ue par le SCDI de Montpellier
+Lâ€™outil a Ã©tÃ© dÃ©veloppÃ© par UCCELLO LABS contact@uccellolabs.com  
 
 ### Editeur
-SCDI-Université de Montpellier Paul-Valéry
+SCDI-UniversitÃ© de Montpellier Paul-ValÃ©ry
 Route de Mende
 34199 Montpellier Cedex 5
 
@@ -20,7 +20,7 @@ https://cecill.info/licences/Licence_CeCILL_V2.1-fr.txt
 Courriel : scdi-assistance-cafe@univ-montp3.fr
 
 
-## Environnement de développement recommandé
+## Environnement de dÃ©veloppement recommandÃ©
 
 - [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
@@ -32,13 +32,13 @@ Courriel : scdi-assistance-cafe@univ-montp3.fr
 $ npm install
 ```
 
-### Développement
+### DÃ©veloppement
 
 ```bash
 $ npm run dev
 ```
 
-### Génération de l'exécutable
+### GÃ©nÃ©ration de l'exÃ©cutable
 
 ```bash
 # For windows
