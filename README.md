@@ -1,7 +1,9 @@
 # CAFÉ : Création Automatisée de Fichiers d'Exemplarisation
 
-L’application **CAFÉ** permet d'automatiser le traitement des données provenant du Sudoc et de BACON, opérations essentielles à la préparation des fichiers d’exemplarisation pour le signalement de la documentation électronique. L'application a été développée dans le cadre du Programme de coopération initié par l’Abes.\
-L'application est actuellement en test.\
+L’application **CAFÉ** permet d'automatiser le traitement des données provenant du Sudoc et de BACON, opérations essentielles à la préparation des fichiers d’exemplarisation pour le signalement de la documentation électronique. L'application a été développée dans le cadre du Programme de coopération initié par l’Abes.
+
+L'application est actuellement en test.
+
 CAFÉ est une application ElectronJS (utilisant la bibliothèque JavaScript React).
 
 ### Crédits
