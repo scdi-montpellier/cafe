@@ -8,7 +8,7 @@ CAFÉ est une application ElectronJS (utilisant la bibliothèque JavaScript Reac
 
 ### Crédits :
 L’application CAFÉ a été conçue par le SCDI de Montpellier\
-L’outil a été développé par UCCELLO LABS contact@uccellolabs.com  
+L’outil a été développé par UCCELLO LABS contact@uccellolabs.com puis repris et mis à jour par le SCDI de Montpellier
 
 ### Editeur :
 SCDI - Université de Montpellier Paul-Valéry\

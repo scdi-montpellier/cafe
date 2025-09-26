@@ -44,6 +44,11 @@ export async function processBacon(profile, processingFolderPath, event, progres
       return false
     }
     seen.add(recordString)
+    //+ SLP 26/09/2025
+    record.originalURL = record.title_url
+    //traitement des URLs
+    record.title_url = processUrls(record.title_url, profile)
+    //- SLP 26/09/2025
     return true
   })
 
@@ -161,11 +166,13 @@ export async function processBacon(profile, processingFolderPath, event, progres
     event.reply('profile:process:progress', progressBar)
     this.manageMessages(event, `Erreurs trouvées : ${errorRecords.length}`)
   }
-  validAAjouter.forEach((record) => {
-    record.originalURL = record.title_url
+  //+ SLP 26/09/2025
+  // validAAjouter.forEach((record) => {
+    // record.originalURL = record.title_url
     //traitement des URLs
-    record.title_url = processUrls(record.title_url, profile)
-  })
+    // record.title_url = processUrls(record.title_url, profile)
+  // })
+  //- SLP 26/09/2025
 
   //Exemplarisation Periodics
   if (profile['Type'] === 'Périodique') {

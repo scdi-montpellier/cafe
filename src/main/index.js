@@ -231,8 +231,9 @@ app.whenReady().then(async () => {
   ipcMain.on('profiles:get', async (event) => {
     const profiles = await profile.getAllProfiles()
     if (profiles.length === 0) {
-      console.log('No profiles found')
+      console.log('Aucun fichier profils.csv trouvé')
     }
+
     event.reply('profiles:load', profiles)
   })
 

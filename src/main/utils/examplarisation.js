@@ -20,7 +20,7 @@ export function createExemplarisationEbooks(records, profile) {
     profile['E856$b - préfixe à supprimer'] ||
     profile['E856$b - suffixe à supprimer'] ||
     profile['E856$b - préfixe à ajouter']
-  console.log('isAnalyser:', isAnalyser)
+  console.log('isAnalyserEbooks:', isAnalyser)
 
   let keyE856$q = profile['E856$l'] ? '$q' : 'E856$q'
   let keyU856$u = profile['E856$l'] || profile['E856$q'] || isAnalyser ? '$u' : 'E856$u'
@@ -116,7 +116,7 @@ export function createExemplarisationPeriodics(records, profile) {
     profile['E856$b - préfixe à supprimer'] ||
     profile['E856$b - suffixe à supprimer'] ||
     profile['E856$b - préfixe à ajouter']
-  console.log('isAnalyser:', isAnalyser)
+  console.log('isAnalyserPeriodics:', isAnalyser)
 
   let keyE856$q = profile['E856$l'] ? '$q' : 'E856$q'
   let keyU856$u = profile['E856$l'] || profile['E856$q'] || isAnalyser ? '$u' : 'E856$u'
