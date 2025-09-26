@@ -7,12 +7,14 @@ const Config = () => {
   const [documentationPath, setDocumentationPath] = useState(
     ipcRenderer.sendSync('documentationPath:get') || ''
   )
+  //+ SLP 26/09/2025
   const [analyticsPath, setAnalyticsPath] = useState(
-    ipcRenderer.sendSync('analyticsPath:get') || ''
+    ipcRenderer.sendSync('analyticsPath:get') || 'https://api-eu.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path={encodedPath}&limit=1000&col_names=true&apikey={apiKey}'
   )
   const [paginationPath, setPaginationPath] = useState(
-    ipcRenderer.sendSync('paginationPath:get') || ''
+    ipcRenderer.sendSync('paginationPath:get') || 'https://api-eu.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?token={resumptionToken}&apikey={apiKey}'
   )
+  //- SLP 26/09/2025
   const [tokenAPI, setTokenAPI] = useState(ipcRenderer.sendSync('tokenAPI:get') || '')
 
   const [darkMode, setDarkMode] = useState(false) // Add dark mode state

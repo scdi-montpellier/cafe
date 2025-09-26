@@ -57,8 +57,18 @@ export class Profile {
     }
     const filePath = path.join(folderPath, 'profils.csv')
 
-    this.analyticsPath = store.get('analyticsPath')
-    this.paginationPath = store.get('paginationPath')
+    //this.analyticsPath = store.get('analyticsPath')
+    if (!store.get('analyticsPath'))
+      this.analyticsPath = "https://api-eu.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path={encodedPath}&limit=1000&col_names=true&apikey={apiKey}"
+    else
+      this.analyticsPath = store.get('analyticsPath')
+
+    //this.paginationPath = store.get('paginationPath')
+    if (!store.get('paginationPath'))
+      this.paginationPath = store.get('paginationPath')
+    else
+      this.paginationPath ="https://api-eu.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?token={resumptionToken}&apikey={apiKey}"
+    
     this.tokenAPI = store.get('tokenAPI')
 
     try {
